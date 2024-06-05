@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+  color: #10af89;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 800px;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.name-input,
+.desc-input {
+  width: 700px;
+  border-radius: 5px;
+  border: 1px solid #10af89;
+}
+
+.add-btn {
+  width: 400px;
+  height: 38px;
+}
+
+.add-btn,
+.edit-btn {
+  background-color: #13ad89;
+}
+
+.btn-danger {
+  background-color: #cf5f1d;
+}
+
+.list {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.form-group.d-flex {
+  margin-bottom: 0.5rem;
+}
+
+.filter-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  width: 100%; /* Ensure it spans the full width */
 }
 
-.App-link {
-  color: #61dafb;
+.filter {
+  margin-right: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filter-drop-down {
+  max-width: 170px;
+}
+
+.card-body {
+  padding: 1.5rem;
+  background-color: rgb(204, 245, 211);
+  border-radius: 2px;
+}
+
+.item-status {
+  max-width: 170px;
+}
+
+.not-completed:enabled {
+  background-color: #fb8181;
+}
+
+.completed {
+  background-color: #10af89;
+}
+
+/*
+Moving the edit and delete to right side
+*/
+
+.edit-delete {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
 }
